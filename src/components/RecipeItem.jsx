@@ -2,7 +2,7 @@ import React from 'react'
 import {BsCartPlus,BsCartCheck ,BsFillInfoCircleFill} from 'react-icons/bs'
 
 const RecipeItem = ({recipe}) => {
-    const randomPrice = Math.round(Math.random()* 50 + 10) ;
+    const randomPrice = Math.round(Math.random()* 30 + 10) ;
     const newRecipe = {...recipe,price:randomPrice}
   return (
     <div className='recipe-item'>
