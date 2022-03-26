@@ -24,7 +24,7 @@ function App() {
     }
     useEffect(()=>{
         getData(search)
-    },[])
+    },[search])
   return (
     <div className="App">
       <Navbar />
