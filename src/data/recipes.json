@@ -1,0 +1,25 @@
+{
+    "recipes":[
+        {
+            "id":1,
+            "name":"Fried Checken",
+            "description":"some words descripes this item",
+            "price": 19.99,
+            "image":"fried_checken.jpg"
+        },
+        {
+            "id":2,
+            "name":"Soap",
+            "description":"some words descripes this item",
+            "price": 9.99,
+            "image":"soap.jpg"
+        },
+        {
+            "id":3,
+            "name":"Rice",
+            "description":"some words descripes this item",
+            "price": 9.99,
+            "image":"rice.jpg"
+        }
+    ]
+}
