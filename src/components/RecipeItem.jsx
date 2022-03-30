@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsCartPlus,BsCartCheck ,BsFillInfoCircleFill} from 'react-icons/bs'
+import {BsCartPlus ,BsFillInfoCircleFill} from 'react-icons/bs'
 
 const RecipeItem = ({recipe}) => {
     const randomPrice = Math.round(Math.random()* 30 + 10) ;
