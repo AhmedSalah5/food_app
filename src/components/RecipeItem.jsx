@@ -11,10 +11,10 @@ const RecipeItem = ({recipe}) => {
         <p>Price : ${newRecipe.price}</p>
         <hr />
         <div className="links">
-            <a href="">
+            <a href="/">
                 <BsFillInfoCircleFill/>
             </a>
-            <a href="">
+            <a href="/">
                 <BsCartPlus/>
             </a>
         </div>
