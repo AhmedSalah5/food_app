@@ -40,9 +40,15 @@ form input{
 form button{
   padding: 10px 15px;
   border-radius: 6px;
+  cursor: pointer;
   border: none;
 }
-
+form select{
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: none;
+}
 /*recipes*/
 .recipes{
   width: 100%;

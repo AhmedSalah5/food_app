@@ -1,4 +1,6 @@
 import React from "react"
+import {BsSearch} from "react-icons/bs"
+
 function Form({getRecipes,categories}) {
   return (
     <form onSubmit={getRecipes}>
@@ -10,7 +12,7 @@ function Form({getRecipes,categories}) {
           })}
 
         </select>
-        <button type='submit'>Search</button>
+        <button type='submit'><BsSearch/> </button>
     </form>
   )
 }
