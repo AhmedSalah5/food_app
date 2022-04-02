@@ -5,6 +5,8 @@ import './App.css';
 import Form from './components/Form';
 import Navbar from './components/Navbar';
 import Recipes from './components/Recipes';
+import { Route, Routes } from 'react-router-dom';
+import Details from './components/Details';
 
 
 function App() {
@@ -46,8 +48,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Form getRecipes={getRecipes} categories={categories} />
-      <Recipes recipesData={recipesData} />
+      <Routes>
+        <Route path='/' element={
+          <div>
+          <Form getRecipes={getRecipes} categories={categories} />
+          <Recipes recipesData={recipesData} />
+          </div>
+        }/>
+
+        <Route path='/details/:id' element={ <Details/> } />
+      </Routes>
+      
     </div>
   );
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import {BsCartPlus ,BsFillInfoCircleFill} from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 const RecipeItem = ({recipe}) => {
+    console.log(recipe)
     const randomPrice = Math.round(Math.random()* 30 + 10) ;
     const newRecipe = {...recipe,price:randomPrice}
   return (
@@ -11,9 +13,7 @@ const RecipeItem = ({recipe}) => {
         <p>Price : ${newRecipe.price}</p>
         <hr />
         <div className="links">
-            <a href="/">
-                <BsFillInfoCircleFill/>
-            </a>
+            <Link to={`/details/${newRecipe.idMeal}`}><BsFillInfoCircleFill/></Link>
             <a href="/">
                 <BsCartPlus/>
             </a>
